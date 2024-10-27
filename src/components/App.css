@@ -1,9 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("../public/mountain_pic.avif");
-  background-size: cover;
-  background-position: center;
 }
 
 .App {
@@ -12,54 +9,95 @@ body {
   grid-template-columns: 250px auto;
   height: 100vh;
   overflow: scroll;
+  color: black;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    url("../public/nature_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   background-color: black;
-  color: white;
+  color: aliceblue;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+  font-family: "Arial";
 }
 
 form {
-  padding: 10px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 form input,
 form textarea {
   margin-bottom: 10px;
-  width: 300px;
+  width: 600px;
+  justify-content: center;
+}
+
+form .button {
+display: block;
 }
 
 nav,
 article {
   height: 100%;
-  padding: 10px;
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: #377BA6;
+  font-family: "Trebuchet MS";
+  padding: 10px;
 }
 
 nav p:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: white;
+}
+
+article {
+  padding: 40px;
+  display: grid;
+  justify-content: center;
 }
 
 article .date {
   font-style: italic;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-size: small;
 }
 
 article .body {
   white-space: break-spaces;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  background-color: aliceblue;
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-rows: min-content auto;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+button {
+  font: "Trebuchet MS";
+  font-size: small;
+  background-color: aliceblue;
 }
 
 .error {
+  font-family: "Trebuchet MS";
   background-color: red;
   color: gold;
   padding: 5px;
