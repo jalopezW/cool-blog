@@ -21,11 +21,32 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: black;
   color: aliceblue;
   grid-column: 1 / span 2;
-  padding: 10px 5px;
+
   font-family: "Arial";
+}
+
+h4 {
+  font-size: large;
+  font-family: "Trebuchet MS";
+}
+
+.signout-profile-photo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-photo {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  justify-content: left;
+  border-radius: 15px;
+  border-style: solid;
 }
 
 form {
@@ -37,6 +58,7 @@ form {
 
 form input,
 form textarea {
+  display: flex;
   margin-bottom: 10px;
   width: 600px;
   justify-content: center;
@@ -46,10 +68,10 @@ form .button {
 display: block;
 }
 
-nav,
+/* nav,
 article {
   height: 100%;
-}
+} */
 
 nav {
   background-color: #377BA6;
@@ -81,13 +103,13 @@ article .body {
   font-family: "Trebuchet MS";
   color: black;
   font-size: large;
-  font-weight: bold;
+
   background-color: aliceblue;
   display: grid;
   grid-column: 1 / span 2;
   grid-template-rows: min-content auto;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 button {
@@ -98,7 +120,13 @@ button {
 
 .error {
   font-family: "Trebuchet MS";
-  background-color: red;
-  color: gold;
+  background-color: rgb(186, 19, 19);
+  color: rgb(197, 176, 55);
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
 }
