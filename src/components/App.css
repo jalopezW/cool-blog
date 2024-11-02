@@ -68,11 +68,6 @@ form .button {
 display: block;
 }
 
-/* nav,
-article {
-  height: 100%;
-} */
-
 nav {
   background-color: #377BA6;
   font-family: "Trebuchet MS";
@@ -130,3 +125,4 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
