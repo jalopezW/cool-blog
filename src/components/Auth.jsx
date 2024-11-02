@@ -6,7 +6,7 @@ export function SignIn() {
 
 export function SignOut({ user }) {
   return (
-    <div className="signout-profile-photo-container">
+    <div className="signout-profile-photo">
       Hello, {loggedInUserDisplayName()}
       <img src={user.photoURL} alt="User's Email Profile Photo" className="profile-photo" />
       <button onClick={logout}>Sign Out</button>
