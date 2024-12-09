@@ -10,8 +10,10 @@ body {
   height: 100vh;
   overflow: scroll;
   color: black;
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
     url("../public/nature_image.jpg");
   background-size: cover;
   background-position: center;
@@ -65,11 +67,11 @@ form textarea {
 }
 
 form .button {
-display: block;
+  display: block;
 }
 
 nav {
-  background-color: #377BA6;
+  background-color: #377ba6;
   font-family: "Trebuchet MS";
   padding: 10px;
 }
@@ -119,10 +121,3 @@ button {
   color: rgb(197, 176, 55);
   padding: 5px;
 }
-
-@media (max-width: 768px) {
-  .App {
-    grid-template-columns: 1fr;
-  }
-}
-
